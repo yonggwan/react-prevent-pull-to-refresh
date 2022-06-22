@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import PreventPullDownRefresh from './PreventPullDownRefresh';
+import ScrollContainer from './ScrollContainer';
+import ToManyContent from './ToManyContent';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app clearboth">
+      <div style={{ width: '45%', float: 'left'}}>
+        <PreventPullDownRefresh>
+          <ScrollContainer>
+            <ToManyContent />
+          </ScrollContainer>
+        </PreventPullDownRefresh>
+      </div>
+      <div style={{ width: '45%', float: 'right'}}>
+        <ScrollContainer>
+          <ToManyContent />
+        </ScrollContainer>
+      </div>
     </div>
   );
 }

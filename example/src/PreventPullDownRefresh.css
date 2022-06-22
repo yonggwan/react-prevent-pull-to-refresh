@@ -1,0 +1,4 @@
+.prevent-pull-down-refresh{
+	overflow-y:scroll;
+	overscroll-behavior:contain;
+}
