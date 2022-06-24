@@ -14,14 +14,14 @@ function App() {
         <div style={{ display: 'inline-block', width: '150px', float: 'left'}}>
           <PreventPullDownRefresh>
             <ScrollContainer height={300}>  
-              <ToManyContent />
+              scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me 
             </ScrollContainer>
           </PreventPullDownRefresh>
         </div>
 
         <div style={{ display: 'inline-block', width: '150px', float: 'right'}}>
           <ScrollContainer height={300}>
-            <ToManyContent />
+            scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me 
           </ScrollContainer>
         </div>
         
