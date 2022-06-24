@@ -5,19 +5,30 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app clearboth">
-      <div style={{ width: '45%', float: 'left'}}>
-        <PreventPullDownRefresh>
-          <ScrollContainer>
+    <div className="app">
+      
+      <ScrollContainer height={500}>
+
+        <ToManyContent />
+        
+        <div style={{ display: 'inline-block', width: '150px', float: 'left'}}>
+          <PreventPullDownRefresh>
+            <ScrollContainer height={300}>  
+              <ToManyContent />
+            </ScrollContainer>
+          </PreventPullDownRefresh>
+        </div>
+
+        <div style={{ display: 'inline-block', width: '150px', float: 'right'}}>
+          <ScrollContainer height={300}>
             <ToManyContent />
           </ScrollContainer>
-        </PreventPullDownRefresh>
-      </div>
-      <div style={{ width: '45%', float: 'right'}}>
-        <ScrollContainer>
-          <ToManyContent />
-        </ScrollContainer>
-      </div>
+        </div>
+        
+        <ToManyContent />
+
+      </ScrollContainer>
+
     </div>
   );
 }

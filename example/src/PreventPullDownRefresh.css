@@ -1,4 +1,11 @@
-.prevent-pull-down-refresh{
+.prevent-pull-down-refresh {
 	overflow-y:scroll;
 	overscroll-behavior:contain;
+}
+.no-scroll-bar {
+	-ms-overflow-style: none; /* IE, Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.no-scroll-bar::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
 }
