@@ -1,9 +1,12 @@
+import { useRef } from 'react';
 import PreventPullDownRefresh from './PreventPullDownRefresh';
 import ScrollContainer from './ScrollContainer';
 import ToManyContent from './ToManyContent';
 import './App.css';
 
 function App() {
+  const nonScrollableRef = useRef();
+
   return (
     <div className="app">
       
@@ -12,8 +15,8 @@ function App() {
         <ToManyContent />
         
         <div style={{ display: 'inline-block', width: '150px', float: 'left'}}>
-          <PreventPullDownRefresh>
-            <ScrollContainer height={300}>  
+          <PreventPullDownRefresh forwardedRef={nonScrollableRef}>
+            <ScrollContainer ref={nonScrollableRef} height={300}>  
               scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me <br/>scroll up me <br/> scroll up me 
             </ScrollContainer>
           </PreventPullDownRefresh>
